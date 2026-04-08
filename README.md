@@ -1,15 +1,15 @@
 # UCNature
 
-Block theme for the UC Natural Reserve System.
+Block theme for UC Nature.
 
 ## About
 
-`ucnature` is a custom WordPress block theme derived from Frost and adapted for the UC Natural Reserve System website. It includes full-site editing templates, custom block styles, a custom CTA block, and theme patterns tailored for editorial and informational content.
+`ucnature` is a custom WordPress block theme derived from Frost and adapted for the UC Nature website. It includes full-site editing templates, custom block styles, and theme patterns tailored for editorial, informational, and mission-driven content. The theme is built to support a flexible publishing workflow in the WordPress Site Editor while preserving the UC Nature visual identity.
 
 ## Requirements
 
-- WordPress 6.2+
-- PHP 5.7+
+- WordPress 6.8+
+- PHP 7.2+
 - License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
 
 ## Getting Started

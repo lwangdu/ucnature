@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-UCNature block theme
+UCNature block theme for UC Nature. A Frost-based WordPress block theme with full-site editing templates, custom block styles, and curated patterns for editorial and informational content.
 
 == Changelog ==
 
