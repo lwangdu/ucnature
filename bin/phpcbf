@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -eu
+
+export PATH="/opt/homebrew/bin:$PATH"
+
+exec /opt/homebrew/bin/phpcbf "$@"

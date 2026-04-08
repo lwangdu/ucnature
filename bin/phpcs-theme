@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+THEME_DIR=$(dirname "$SCRIPT_DIR")
+
+exec sh "$SCRIPT_DIR/phpcs" --standard="$THEME_DIR/phpcs.xml.dist" "$@"
