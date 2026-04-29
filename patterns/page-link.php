@@ -21,20 +21,20 @@
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"},"style":{"spacing":{"blockGap":"10px","margin":{"bottom":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-buttons" style="margin-bottom:var(--wp--preset--spacing--small)">
-<!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link"><?php echo esc_html__( 'Visit My Website', 'ucnature' ); ?></a></div>
+<!-- wp:button {"width":100,"url":"https://example.com"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link" href="https://example.com"><?php echo esc_html__( 'Visit My Website', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link"><?php echo esc_html__( 'Read My Blog', 'ucnature' ); ?></a></div>
+<!-- wp:button {"width":100,"url":"https://example.com/blog"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link" href="https://example.com/blog"><?php echo esc_html__( 'Read My Blog', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link"><?php echo esc_html__( 'Download My Ebook', 'ucnature' ); ?></a></div>
+<!-- wp:button {"width":100,"url":"https://example.com/ebook"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link" href="https://example.com/ebook"><?php echo esc_html__( 'Download My Ebook', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link"><?php echo esc_html__( 'Follow My Newsletter', 'ucnature' ); ?></a></div>
+<!-- wp:button {"width":100,"url":"https://example.com/newsletter"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link" href="https://example.com/newsletter"><?php echo esc_html__( 'Follow My Newsletter', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link"><?php echo esc_html__( 'Listen to My Podcast', 'ucnature' ); ?></a></div>
+<!-- wp:button {"width":100,"url":"https://example.com/podcast"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link" href="https://example.com/podcast"><?php echo esc_html__( 'Listen to My Podcast', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->

@@ -79,7 +79,8 @@ textarea {
 input:focus,
 textarea:focus {
 	background-color: var(--wp--preset--color--neutral);
-	outline: none;
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 2px;
 }
 
 input[type="checkbox"],
@@ -255,7 +256,9 @@ textarea {
     min-width: 3rem;
     padding: 4px;
 }
-input:focus, textarea:focus {
-    background-color: #EEF0F2;
-    outline: none;
+input:focus,
+textarea:focus {
+	background-color: #EEF0F2;
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 2px;
 }
