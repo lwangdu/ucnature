@@ -262,3 +262,14 @@ textarea:focus {
 	outline: 2px solid var(--wp--preset--color--primary);
 	outline-offset: 2px;
 }
+.wp-block-search__inside-wrapper {
+  gap: 0 !important;
+}
+
+.wp-block-search__input {
+  margin-right: 0 !important;
+}
+
+.wp-block-search__button {
+  margin-left: 0 !important;
+}

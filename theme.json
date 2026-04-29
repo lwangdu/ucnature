@@ -715,9 +715,19 @@
 			"title": "Header"
 		},
 		{
+			"area": "header",
+			"name": "give-header",
+			"title": "Give Header"
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "comments",
+			"title": "Comments"
 		}
 	]
 }
