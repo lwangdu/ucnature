@@ -3,7 +3,10 @@
  * Title: Sample home page.
  * Slug: ucnature/page-home
  * Categories: featured
+ *
+ * @package ucnature
  */
+
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"30px","bottom":"var:preset|spacing|x-large","left":"30px","top":"70px"},"margin":{"top":"0px"},"blockGap":"10px"}},"className":"welcome","layout":{"type":"constrained","wideSize":"800px"}} -->
 <div class="wp-block-group alignfull welcome" style="margin-top:0px;padding-top:70px;padding-right:30px;padding-bottom:var(--wp--preset--spacing--x-large);padding-left:30px"><!-- wp:heading {"textAlign":"center","anchor":"we-reimagine-how-to-build-wordpress-websites","style":{"typography":{"letterSpacing":"-1px"},"spacing":{"margin":{"bottom":"0px"}}},"className":"wp-block-heading","fontSize":"max-72"} -->
@@ -14,11 +17,11 @@
 <p class="has-text-align-center has-large-font-size"><?php echo esc_html__( 'Share reserve stories, field science, and public programs with a homepage built for rich editorial content.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"10px","margin":{"top":"30px"}}}} -->
-<div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button {"fontSize":"small"} -->
-<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","fontSize":"small"} -->
+<div class="wp-block-button has-custom-font-size has-small-font-size"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"className":"is-style-outline-background is-style-outline","fontSize":"small"} -->
-<div class="wp-block-button has-custom-font-size is-style-outline-background is-style-outline has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Learn More', 'ucnature' ); ?></a></div>
+<!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","className":"is-style-outline-background is-style-outline","fontSize":"small"} -->
+<div class="wp-block-button has-custom-font-size is-style-outline-background is-style-outline has-small-font-size"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Learn More', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -33,8 +36,8 @@
 <p><?php echo esc_html__( 'This theme gives UCNRS a flexible foundation for spotlighting reserves, research, teaching, and community impact across California.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"textColor":"base"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-text-color wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?> →</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","textColor":"base"} -->
+<div class="wp-block-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link has-base-color has-text-color wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?> →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -69,8 +72,8 @@
 <p><?php echo esc_html__( 'Mix hero sections, highlight cards, and editorial layouts to showcase field stations, discoveries, events, and giving opportunities.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-primary-background-color has-background wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?> →</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","backgroundColor":"primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link has-primary-background-color has-background wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?> →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -84,8 +87,8 @@
 <p><?php echo esc_html__( 'Adapt the block editor for reserve landing pages, campaign content, educational resources, and updates from across the network.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-primary-background-color has-background wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?> →</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","backgroundColor":"primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link has-primary-background-color has-background wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?> →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -109,8 +112,8 @@
 <p><?php echo esc_html__( 'Start with these sample sections, then tailor them for visitors, researchers, educators, donors, and staff.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-primary-background-color has-background wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?> →</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","backgroundColor":"primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link has-primary-background-color has-background wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?> →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

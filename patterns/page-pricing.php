@@ -3,7 +3,10 @@
  * Title: Sample pricing page.
  * Slug: ucnature/page-pricing
  * Categories: featured
+ *
+ * @package ucnature
  */
+
 ?>
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:group {"style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"constrained"}} -->
@@ -58,8 +61,8 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -105,8 +108,8 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -152,8 +155,8 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

@@ -3,7 +3,10 @@
  * Title: Sample about page.
  * Slug: ucnature/page-about
  * Categories: featured
+ *
+ * @package ucnature
  */
+
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"70px","bottom":"var:preset|spacing|x-large","right":"30px","left":"30px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:70px;padding-right:30px;padding-bottom:var(--wp--preset--spacing--x-large);padding-left:30px"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|medium"}}}} -->
@@ -15,11 +18,11 @@
 <p class="has-large-font-size" style="margin-top:var(--wp--preset--spacing--x-small)"><?php echo esc_html__( 'Use this introduction to explain your mission, audience, and long-term impact.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex"},"style":{"spacing":{"blockGap":"10px","margin":{"top":"30px"}}}} -->
-<div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button {"fontSize":"small"} -->
-<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","fontSize":"small"} -->
+<div class="wp-block-button has-custom-font-size has-small-font-size"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"style":{"spacing":{"padding":{"top":"14px","bottom":"14px","left":"29px","right":"29px"}}},"className":"is-style-outline-background is-style-outline","fontSize":"small"} -->
-<div class="wp-block-button has-custom-font-size is-style-outline-background is-style-outline has-small-font-size"><a class="wp-block-button__link wp-element-button" style="padding-top:14px;padding-right:29px;padding-bottom:14px;padding-left:29px"><?php echo esc_html__( 'Learn More', 'ucnature' ); ?></a></div>
+<!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","style":{"spacing":{"padding":{"top":"14px","bottom":"14px","left":"29px","right":"29px"}}},"className":"is-style-outline-background is-style-outline","fontSize":"small"} -->
+<div class="wp-block-button has-custom-font-size is-style-outline-background is-style-outline has-small-font-size"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button" style="padding-top:14px;padding-right:29px;padding-bottom:14px;padding-left:29px"><?php echo esc_html__( 'Learn More', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -126,11 +129,11 @@
 <!-- /wp:column -->
 <!-- wp:column {"verticalAlignment":"center","width":"35%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-primary-background-color has-background wp-element-button"><?php echo esc_html__( 'View Patterns', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","backgroundColor":"primary","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link has-primary-background-color has-background wp-element-button"><?php echo esc_html__( 'View Patterns', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"textColor":"base","className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-base-color has-text-color wp-element-button"><?php echo esc_html__( 'View Layouts', 'ucnature' ); ?></a></div>
+<!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","textColor":"base","className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link has-base-color has-text-color wp-element-button"><?php echo esc_html__( 'View Layouts', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -158,8 +161,8 @@
 <p class="has-text-align-center" style="line-height:1.5"><?php echo esc_html__( 'I’m a WordPress developer and enjoy building websites.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'View Profile', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'View Profile', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -174,8 +177,8 @@
 <p class="has-text-align-center" style="line-height:1.5"><?php echo esc_html__( 'I’m a WordPress developer and enjoy building websites.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'View Profile', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'View Profile', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -190,8 +193,8 @@
 <p class="has-text-align-center" style="line-height:1.5"><?php echo esc_html__( 'I’m a WordPress developer and enjoy building websites.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'View Profile', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'View Profile', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -206,8 +209,8 @@
 <p class="has-text-align-center" style="line-height:1.5"><?php echo esc_html__( 'I’m a WordPress developer and enjoy building websites.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'View Profile', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><?php echo esc_html__( 'View Profile', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

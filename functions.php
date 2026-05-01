@@ -11,20 +11,20 @@
 if ( ! function_exists( 'ucnature_setup' ) ) {
 
 	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
+	 * Sets up theme defaults.
 	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
+	 * Registers support for WordPress features on after_setup_theme.
+	 * The init hook is too late for post thumbnail support.
 	 *
 	 * @since 0.8.0
 	 *
 	 * @return void
 	 */
 	function ucnature_setup() {
+		$language_dir = get_template_directory() . '/languages';
 
 		// Make theme available for translation.
-		load_theme_textdomain( 'ucnature', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'ucnature', $language_dir );
 
 		// Enqueue editor styles and fonts.
 		add_editor_style(
@@ -35,25 +35,38 @@ if ( ! function_exists( 'ucnature_setup' ) ) {
 
 		// Remove core block patterns.
 		remove_theme_support( 'core-block-patterns' );
-
 	}
 }
 add_action( 'after_setup_theme', 'ucnature_setup' );
 
-// Enqueue style sheet and javascript.
-add_action( 'wp_enqueue_scripts', 'ucnature_enqueue_style_sheet' );
+/**
+ * Enqueue the front-end stylesheet.
+ *
+ * @return void
+ */
 function ucnature_enqueue_style_sheet() {
-	wp_enqueue_style( 'ucnature', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style(
+		'ucnature',
+		get_template_directory_uri() . '/style.css',
+		array(),
+		wp_get_theme()->get( 'Version' )
+	);
 }
+add_action( 'wp_enqueue_scripts', 'ucnature_enqueue_style_sheet' );
 
-//Enqueue editor script for curation embed block.
+/**
+ * Enqueue editor script for the curation embed block.
+ *
+ * @return void
+ */
 function ucnature_enqueue_editor_assets() {
-    wp_enqueue_script(
-        'ucnature-editor-script',
-        get_theme_file_uri( '/assets/js/curation-embed.js' ),
-        array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
-        filemtime( get_theme_file_path( '/assets/js/curation-embed.js' ) )
-    );
+	wp_enqueue_script(
+		'ucnature-editor-script',
+		get_theme_file_uri( '/assets/js/curation-embed.js' ),
+		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
+		filemtime( get_theme_file_path( '/assets/js/curation-embed.js' ) ),
+		true
+	);
 }
 add_action( 'enqueue_block_editor_assets', 'ucnature_enqueue_editor_assets' );
 
@@ -66,28 +79,28 @@ add_action( 'enqueue_block_editor_assets', 'ucnature_enqueue_editor_assets' );
 function ucnature_register_block_styles() {
 
 	$block_styles = array(
-		'core/columns' => array(
+		'core/columns'         => array(
 			'columns-reverse' => __( 'Reverse', 'ucnature' ),
 		),
-		'core/group' => array(
+		'core/group'           => array(
 			'shadow-light' => __( 'Shadow', 'ucnature' ),
 			'shadow-solid' => __( 'Solid', 'ucnature' ),
 		),
-		'core/image' => array(
+		'core/image'           => array(
 			'shadow-light' => __( 'Shadow', 'ucnature' ),
 			'shadow-solid' => __( 'Solid', 'ucnature' ),
 		),
-		'core/list' => array(
+		'core/list'            => array(
 			'no-disc' => __( 'No Disc', 'ucnature' ),
 		),
 		'core/navigation-link' => array(
 			'outline' => __( 'Outline', 'ucnature' ),
 		),
-		'core/quote' => array(
+		'core/quote'           => array(
 			'shadow-light' => __( 'Shadow', 'ucnature' ),
 			'shadow-solid' => __( 'Solid', 'ucnature' ),
 		),
-		'core/social-links' => array(
+		'core/social-links'    => array(
 			'outline' => __( 'Outline', 'ucnature' ),
 		),
 	);
@@ -107,44 +120,52 @@ function ucnature_register_block_styles() {
 add_action( 'init', 'ucnature_register_block_styles' );
 
 /**
- * Add custom login Logo
+ * Print custom login logo styles.
+ *
+ * @return void
  */
-add_action('login_head', function() {
-    $logo_path = '/assets/images/UC-Nature-logo.png';
-    
-    // Use get_theme_file_path for the check (cleaner than get_stylesheet_directory)
-    if (!file_exists(get_theme_file_path($logo_path))) {
-        return;
-    }
+function ucnature_login_logo_styles() {
+	$logo_path = '/assets/images/UC-Nature-logo.png';
 
-    $logo_url = esc_url(get_theme_file_uri($logo_path));
-    ?>
-    <style type="text/css">
-        .login h1 a {
-            background-image: url(<?php echo $logo_url; ?>);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center center;
-            display: block;
-            width: 100%; /* Spans the container */
-            max-width: 350px; /* Limits to your logo's actual width */
-            height: 83px;
-            margin-bottom: 20px;
-        }
-    </style>
-    <?php
-});
+	if ( ! file_exists( get_theme_file_path( $logo_path ) ) ) {
+		return;
+	}
 
-/**
- * Filter the login logo URL
- */
-add_filter('login_headerurl', function() {
-    return 'https://ucnature.org';
-});
+	$logo_url = get_theme_file_uri( $logo_path );
+	?>
+	<style type="text/css">
+		.login h1 a {
+			background-image: url(<?php echo esc_url( $logo_url ); ?>);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: block;
+			width: 100%;
+			max-width: 350px;
+			height: 83px;
+			margin-bottom: 20px;
+		}
+	</style>
+	<?php
+}
+add_action( 'login_head', 'ucnature_login_logo_styles' );
 
 /**
- * Filter the login logo hover title
+ * Filter the login logo URL.
+ *
+ * @return string
  */
-add_filter('login_headertext', function() {
-    return 'UC Nature';
-});
+function ucnature_login_logo_url() {
+	return 'https://ucnature.org';
+}
+add_filter( 'login_headerurl', 'ucnature_login_logo_url' );
+
+/**
+ * Filter the login logo hover title.
+ *
+ * @return string
+ */
+function ucnature_login_logo_title() {
+	return 'UC Nature';
+}
+add_filter( 'login_headertext', 'ucnature_login_logo_title' );

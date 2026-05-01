@@ -3,7 +3,10 @@
  * Title: Pricing table with heading, list, buttons.
  * Slug: ucnature/general-pricing-four-columns
  * Categories: featured
+ *
+ * @package ucnature
  */
+
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:columns -->
@@ -49,8 +52,8 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -96,8 +99,8 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -143,8 +146,8 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -190,8 +193,8 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

@@ -2,6 +2,14 @@
 
 set -eu
 
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+THEME_DIR=$(dirname "$SCRIPT_DIR")
+LOCAL_PHPCS="$THEME_DIR/vendor/bin/phpcs"
+
+if [ -x "$LOCAL_PHPCS" ]; then
+	exec "$LOCAL_PHPCS" "$@"
+fi
+
 export PATH="/opt/homebrew/bin:$PATH"
 
 exec /opt/homebrew/bin/phpcs "$@"

@@ -10,6 +10,6 @@ if [ ! -x "$PHP_BIN" ]; then
 	exit 1
 fi
 
-find . -name '*.php' -type f | sort | while IFS= read -r file; do
+find . -path './vendor' -prune -o -name '*.php' -type f -print | sort | while IFS= read -r file; do
 	"$PHP_BIN" -l "$file"
 done

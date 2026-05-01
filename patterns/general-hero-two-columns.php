@@ -3,7 +3,10 @@
  * Title: Section with image, text, buttons.
  * Slug: ucnature/general-hero-two-columns
  * Categories: featured
+ *
+ * @package ucnature
  */
+
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"center","className":"is-style-columns-reverse"} -->
@@ -16,11 +19,11 @@
 <p><?php echo esc_html__( 'Use this pattern to promote programs, stories, and calls to action across the UC Natural Reserve System.', 'ucnature' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'ucnature' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Learn More', 'ucnature' ); ?></a></div>
+<!-- wp:button {"url":"<?php echo esc_url( home_url( '/' ) ); ?>","className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Learn More', 'ucnature' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

@@ -3,7 +3,10 @@
  * Title: 404 error content.
  * Slug: ucnature/404
  * Inserter: false
+ *
+ * @package ucnature
  */
+
 ?>
 <!-- wp:heading {"level":1} -->
 <h1><?php echo esc_html__( 'Not found, error 404', 'ucnature' ); ?></h1>

@@ -120,7 +120,7 @@
 					"slug": "light-orange"
 				},
 				{
-					"color": "#2196d6",
+					"color": "#006CA8",
 					"name": "Tertiary",
 					"slug": "tertiary"
 				},
@@ -140,7 +140,7 @@
 					"slug": "darker-gray"
 				},
 				{
-					"color": "#7f8182",
+					"color": "#676A6C",
 					"name": "Darker",
 					"slug": "darker"
 				},
@@ -238,7 +238,7 @@
 				{
 					"fontFace": [
 						{
-							"fontDisplay": "block",
+							"fontDisplay": "swap",
 							"fontFamily": "Outfit",
 							"fontStretch": "normal",
 							"fontStyle": "normal",

@@ -24,6 +24,20 @@ html {
 	scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}
+
 img.edit-site-site-icon__image {
 	filter: invert(1);
 }
@@ -81,6 +95,53 @@ textarea:focus {
 	background-color: var(--wp--preset--color--neutral);
 	outline: 2px solid var(--wp--preset--color--primary);
 	outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+.wp-element-button:focus-visible,
+.wp-block-navigation a:focus-visible,
+.wp-block-navigation button:focus-visible,
+.wp-block-search__button:focus-visible {
+	outline: 3px solid var(--wp--preset--color--primary);
+	outline-offset: 3px;
+}
+
+.has-contrast-background-color a:focus-visible,
+.has-contrast-background-color button:focus-visible,
+.has-contrast-background-color input:focus-visible,
+.has-contrast-background-color select:focus-visible,
+.has-contrast-background-color textarea:focus-visible,
+.has-contrast-background-color summary:focus-visible,
+.has-contrast-background-color .wp-element-button:focus-visible,
+.has-primary-background-color a:focus-visible,
+.has-primary-background-color button:focus-visible,
+.has-primary-background-color input:focus-visible,
+.has-primary-background-color select:focus-visible,
+.has-primary-background-color textarea:focus-visible,
+.has-primary-background-color summary:focus-visible,
+.has-primary-background-color .wp-element-button:focus-visible,
+.has-secondary-background-color a:focus-visible,
+.has-secondary-background-color button:focus-visible,
+.has-secondary-background-color input:focus-visible,
+.has-secondary-background-color select:focus-visible,
+.has-secondary-background-color textarea:focus-visible,
+.has-secondary-background-color summary:focus-visible,
+.has-secondary-background-color .wp-element-button:focus-visible,
+.has-blue-background-color a:focus-visible,
+.has-blue-background-color button:focus-visible,
+.has-blue-background-color input:focus-visible,
+.has-blue-background-color select:focus-visible,
+.has-blue-background-color textarea:focus-visible,
+.has-blue-background-color summary:focus-visible,
+.has-blue-background-color .wp-element-button:focus-visible,
+.wp-block-navigation__responsive-container.has-modal-open a:focus-visible,
+.wp-block-navigation__responsive-container.has-modal-open button:focus-visible {
+	outline-color: var(--wp--preset--color--light-orange);
 }
 
 input[type="checkbox"],
@@ -229,47 +290,45 @@ textarea {
 
 /** Gravity search Button */
 .gv-widget-search .gv-search-box.gv-search-box-submit .gv-search-button {
-    order: -111;
-    background: #003660;
+	order: -111;
+	background: #003660;
 	border-radius: 5px;
-    color: #fff;
-    max-width: 250px;
+	color: #fff;
+	max-width: 250px;
 }
 
-.gform_legacy_markup_wrapper .gform_footer input.button, .gform_legacy_markup_wrapper 
+.gform_legacy_markup_wrapper .gform_footer input.button, .gform_legacy_markup_wrapper
 .gform_footer input[type=submit] {
-    background: #003660;
-    color: #fff;
+	background: #003660;
+	color: #fff;
 	font-weight: 700;
 	border-radius: 5px;
-    width: 250px;
+	width: 250px;
 }
 
-
-.wp-block-search__button svg {
-    min-height: 30px;
-    min-width: 30px;
-}
-
-.wp-block-search__input {
-    border: 1px solid #DCE1E5;
-    min-width: 3rem;
-    padding: 4px;
-}
-input:focus,
-textarea:focus {
-	background-color: #EEF0F2;
-	outline: 2px solid var(--wp--preset--color--primary);
-	outline-offset: 2px;
-}
 .wp-block-search__inside-wrapper {
-  gap: 0 !important;
-}
-
-.wp-block-search__input {
-  margin-right: 0 !important;
+	background: transparent !important;
+	border: none !important;
+	gap: 0 !important;
+	padding: 0 !important;
 }
 
 .wp-block-search__button {
-  margin-left: 0 !important;
+	margin-left: 0 !important;
+}
+
+.wp-block-search__button svg {
+	min-height: 30px;
+	min-width: 30px;
+}
+
+.wp-block-search__input {
+	border: 1px solid #dce1e5;
+	margin-right: 0 !important;
+	min-width: 3rem;
+	padding: 4px;
+}
+
+.wp-block-button__link {
+	text-decoration: none !important;
 }

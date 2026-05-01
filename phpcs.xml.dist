@@ -2,13 +2,19 @@
 <ruleset name="UCNature">
 	<description>PHP_CodeSniffer rules for the UCNature theme.</description>
 
-	<arg name="extensions" value="php"/>
+	<arg name="extensions" value="php,css"/>
 	<arg name="colors"/>
 
-	<rule ref="PSR12"/>
+	<rule ref="WordPress"/>
+
+	<!-- Block pattern files preserve generated block markup, which can exceed 120 columns. -->
+	<rule ref="Generic.Files.LineLength.TooLong">
+		<exclude-pattern>patterns/*</exclude-pattern>
+	</rule>
 
 	<file>functions.php</file>
 	<file>index.php</file>
+	<file>style.css</file>
 	<file>blocks</file>
 	<file>patterns</file>
 
