@@ -10,7 +10,7 @@ Block theme for UC Nature.
 
 - WordPress 6.8+
 - PHP 7.2+
-- License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
+- License: [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) or later
 
 ## Getting Started
 

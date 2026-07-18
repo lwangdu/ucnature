@@ -1,0 +1,27 @@
+=== Accessibility Statement ===
+
+UC Nature is developed with accessibility best practices in mind. Accessibility should be verified whenever templates, patterns, styles, or interactive behavior change.
+
+== Quick Information ==
+
+Accessibility audit completed: No
+
+== Testing Tools and Methodology ==
+
+Development checks include PHP syntax validation, WordPress Coding Standards, semantic template review, keyboard-focus style review, color contrast calculations, and automated accessibility testing when the theme is active on a representative WordPress site. A complete WCAG 2.2 AA audit has not yet been completed for this version.
+
+== Screen Reader Text Class ==
+
+`.screen-reader-text`
+
+== Accessibility Features ==
+
+The theme includes visible keyboard focus styles, reduced-motion handling, semantic landmark elements, labelled search forms, responsive navigation provided by WordPress core, and descriptive or intentionally empty alternative text in bundled patterns.
+
+== Accessibility Help Contact ==
+
+Accessibility help is available through the UC Nature contact page: https://ucnature.org/contact-us/
+
+== Where to Report Issues ==
+
+Please report theme accessibility issues at https://github.com/lwangdu/ucnature/issues.

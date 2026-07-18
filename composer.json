@@ -2,7 +2,7 @@
 	"name": "ucnature/ucnature-theme",
 	"description": "Development tooling for the UCNature WordPress theme.",
 	"type": "wordpress-theme",
-	"license": "GPL-2.0-or-later",
+	"license": "GPL-3.0-or-later",
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.2",
 		"wp-coding-standards/wpcs": "^3.3"

@@ -4,7 +4,7 @@
  *
  * @package ucnature
  * @author  Lobsang Wangdu
- * @license GNU General Public License v2 or later
+ * @license GNU General Public License v3 or later
  * @link    https://ucnature.org/
  */
 

@@ -27,33 +27,33 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 <!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:image {"id":5886,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_black_1200x1200.jpg'; ?>" alt="<?php echo esc_attr__( 'Sample editorial portrait for the about page', 'ucnature' ); ?>" class="wp-image-5886"/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_black_1200x1200.jpg'; ?>" alt="<?php echo esc_attr__( 'Sample editorial portrait for the about page', 'ucnature' ); ?>"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","right":"30px","left":"30px"},"margin":{"top":"0"}}},"backgroundColor":"contrast","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-contrast-background-color has-background" style="margin-top:0;padding-top:var(--wp--preset--spacing--medium);padding-right:30px;padding-bottom:var(--wp--preset--spacing--medium);padding-left:30px"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group alignwide"><!-- wp:image {"id":5573,"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample-logo.png'; ?>" alt="" class="wp-image-5573" width="150" height="32"/></figure>
+<div class="wp-block-group alignwide"><!-- wp:image {"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/NRS-logo.png'; ?>" alt="" width="150" height="38"/></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":5573,"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample-logo.png'; ?>" alt="" class="wp-image-5573" width="150" height="32"/></figure>
+<!-- wp:image {"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/NRS-logo.png'; ?>" alt="" width="150" height="38"/></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":5573,"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample-logo.png'; ?>" alt="" class="wp-image-5573" width="150" height="32"/></figure>
+<!-- wp:image {"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/NRS-logo.png'; ?>" alt="" width="150" height="38"/></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":5573,"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample-logo.png'; ?>" alt="" class="wp-image-5573" width="150" height="32"/></figure>
+<!-- wp:image {"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/NRS-logo.png'; ?>" alt="" width="150" height="38"/></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":5573,"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample-logo.png'; ?>" alt="" class="wp-image-5573" width="150" height="32"/></figure>
+<!-- wp:image {"width":150,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/NRS-logo.png'; ?>" alt="<?php echo esc_attr__( 'UC Natural Reserve System logo', 'ucnature' ); ?>" width="150" height="38"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","right":"30px","left":"30px"},"margin":{"top":"0"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
-<div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--x-large);padding-right:30px;padding-bottom:var(--wp--preset--spacing--x-large);padding-left:30px"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","anchor":"features","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","right":"30px","left":"30px"},"margin":{"top":"0"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
+<div class="wp-block-group alignfull" id="features" style="margin-top:0;padding-top:var(--wp--preset--spacing--x-large);padding-right:30px;padding-bottom:var(--wp--preset--spacing--x-large);padding-left:30px"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","style":{"typography":{"letterSpacing":"-1px"}},"className":"wp-block-heading","fontSize":"max-60"} -->
 <h2 class="wp-block-heading has-text-align-center has-max-60-font-size" id="text-on-left-image-on-right" style="letter-spacing:-1px">Tell your UCNRS story.</h2>
 <!-- /wp:heading -->
@@ -151,8 +151,8 @@
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"align":"center","id":3489,"width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" class="wp-image-3489" width="200" height="200"/></figure>
+<div class="wp-block-column"><!-- wp:image {"align":"center","width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" width="200" height="200"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3,"fontSize":"medium"} -->
 <h3 class="wp-block-heading has-text-align-center has-medium-font-size" id="member-name-1"><?php echo esc_html__( 'Member Name', 'ucnature' ); ?></h3>
@@ -167,8 +167,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"align":"center","id":3489,"width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" class="wp-image-3489" width="200" height="200"/></figure>
+<div class="wp-block-column"><!-- wp:image {"align":"center","width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" width="200" height="200"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3,"fontSize":"medium"} -->
 <h3 class="wp-block-heading has-text-align-center has-medium-font-size" id="member-name-2"><?php echo esc_html__( 'Member Name', 'ucnature' ); ?></h3>
@@ -183,8 +183,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"align":"center","id":3489,"width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" class="wp-image-3489" width="200" height="200"/></figure>
+<div class="wp-block-column"><!-- wp:image {"align":"center","width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" width="200" height="200"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3,"fontSize":"medium"} -->
 <h3 class="wp-block-heading has-text-align-center has-medium-font-size" id="member-name-3"><?php echo esc_html__( 'Member Name', 'ucnature' ); ?></h3>
@@ -199,8 +199,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"align":"center","id":3489,"width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" class="wp-image-3489" width="200" height="200"/></figure>
+<div class="wp-block-column"><!-- wp:image {"align":"center","width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" width="200" height="200"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3,"fontSize":"medium"} -->
 <h3 class="wp-block-heading has-text-align-center has-medium-font-size" id="member-name-4"><?php echo esc_html__( 'Member Name', 'ucnature' ); ?></h3>

@@ -11,8 +11,8 @@
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"align":"center","id":3489,"width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" class="wp-image-3489" width="200" height="200"/></figure>
+<div class="wp-block-column"><!-- wp:image {"align":"center","width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" width="200" height="200"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3,"anchor":"member-name-1","fontSize":"medium"} -->
 <h3 class="wp-block-heading has-text-align-center has-medium-font-size" id="member-name-1"><?php echo esc_html__( 'Member Name', 'ucnature' ); ?></h3>
@@ -27,8 +27,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"align":"center","id":3489,"width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" class="wp-image-3489" width="200" height="200"/></figure>
+<div class="wp-block-column"><!-- wp:image {"align":"center","width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" width="200" height="200"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3,"anchor":"member-name-2","fontSize":"medium"} -->
 <h3 class="wp-block-heading has-text-align-center has-medium-font-size" id="member-name-2"><?php echo esc_html__( 'Member Name', 'ucnature' ); ?></h3>
@@ -43,8 +43,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"align":"center","id":3489,"width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" class="wp-image-3489" width="200" height="200"/></figure>
+<div class="wp-block-column"><!-- wp:image {"align":"center","width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" width="200" height="200"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3,"anchor":"member-name-3","fontSize":"medium"} -->
 <h3 class="wp-block-heading has-text-align-center has-medium-font-size" id="member-name-3"><?php echo esc_html__( 'Member Name', 'ucnature' ); ?></h3>
@@ -59,8 +59,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"align":"center","id":3489,"width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" class="wp-image-3489" width="200" height="200"/></figure>
+<div class="wp-block-column"><!-- wp:image {"align":"center","width":200,"height":200,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/sample_800x800.jpg'; ?>" alt="<?php echo esc_attr__( 'Portrait of a sample team member', 'ucnature' ); ?>" width="200" height="200"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3,"anchor":"member-name-4","fontSize":"medium"} -->
 <h3 class="wp-block-heading has-text-align-center has-medium-font-size" id="member-name-4"><?php echo esc_html__( 'Member Name', 'ucnature' ); ?></h3>
