@@ -70,6 +70,78 @@ function ucnature_enqueue_editor_assets() {
 }
 add_action( 'enqueue_block_editor_assets', 'ucnature_enqueue_editor_assets' );
 
+/**
+ * Register the accordion block stylesheet for the editor and front end.
+ *
+ * @return void
+ */
+function ucnature_register_accordion_stylesheet() {
+	$stylesheet_path = get_theme_file_path( 'assets/block-accordion.css' );
+
+	wp_enqueue_block_style(
+		'core/accordion',
+		array(
+			'handle' => 'ucnature-block-accordion',
+			'src'    => get_theme_file_uri( 'assets/block-accordion.css' ),
+			'path'   => $stylesheet_path,
+			'ver'    => filemtime( $stylesheet_path ),
+		)
+	);
+}
+add_action( 'init', 'ucnature_register_accordion_stylesheet' );
+
+/**
+ * Open the first item in each minimal accordion by default.
+ *
+ * This also applies the pattern behavior to accordions that were inserted
+ * before the pattern defined its default-open item.
+ *
+ * @param string $block_content Rendered accordion markup.
+ * @return string
+ */
+function ucnature_open_first_accordion_item( $block_content ) {
+	if ( false === strpos( $block_content, 'is-style-accordion-minimal' ) ) {
+		return $block_content;
+	}
+
+	$processor  = new WP_HTML_Tag_Processor( $block_content );
+	$item_query = array( 'class_name' => 'wp-block-accordion-item' );
+
+	if ( ! $processor->next_tag( $item_query ) ) {
+		return $block_content;
+	}
+
+	$context_attribute = $processor->get_attribute( 'data-wp-context' );
+	$context           = json_decode( $context_attribute, true );
+
+	if ( ! is_array( $context ) ) {
+		return $block_content;
+	}
+
+	$context['openByDefault'] = true;
+	$processor->set_attribute( 'data-wp-context', wp_json_encode( $context ) );
+	$processor->add_class( 'is-open' );
+
+	$toggle_query = array(
+		'class_name' => 'wp-block-accordion-heading__toggle',
+	);
+
+	if ( $processor->next_tag( $toggle_query ) ) {
+		$processor->set_attribute( 'aria-expanded', 'true' );
+	}
+
+	$panel_query = array( 'class_name' => 'wp-block-accordion-panel' );
+
+	if ( $processor->next_tag( $panel_query ) ) {
+		$processor->remove_attribute( 'hidden' );
+	}
+
+	return $processor->get_updated_html();
+}
+add_filter(
+	'render_block_core/accordion',
+	'ucnature_open_first_accordion_item'
+);
 
 /**
  * Register block styles.

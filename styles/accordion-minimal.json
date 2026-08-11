@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Minimal",
+	"slug": "accordion-minimal",
+	"blockTypes": [ "core/accordion" ],
+	"styles": {
+		"css": "& .wp-block-accordion-item { margin-top: 0; }",
+		"spacing": {
+			"blockGap": "0"
+		},
+		"blocks": {
+			"core/accordion-item": {
+				"border": {
+					"radius": "0"
+				},
+				"color": {
+					"background": "transparent"
+				},
+				"shadow": "none"
+			},
+			"core/accordion-panel": {
+				"spacing": {
+					"padding": {
+						"top": "0",
+						"left": "0",
+						"right": "0"
+					}
+				}
+			}
+		}
+	}
+}

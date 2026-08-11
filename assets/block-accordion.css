@@ -1,0 +1,55 @@
+/* Reset heading toggle padding/alignment. */
+.is-style-accordion-minimal .wp-block-accordion-heading__toggle {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 0;
+	padding-right: 0;
+	color: #1f2937; /* dark heading text */
+}
+
+/* Body text color for the panel. */
+.is-style-accordion-minimal .wp-block-accordion-panel {
+	color: #333;
+}
+
+/* Balance the open panel spacing around its content. */
+.is-style-accordion-minimal .wp-block-accordion-item.is-open > .wp-block-accordion-panel {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* Separate adjacent items without adding invalid blocks to the accordion. */
+.is-style-accordion-minimal .wp-block-accordion-item + .wp-block-accordion-item {
+	border-top: 1px solid #e5e7eb;
+}
+
+/* Reset toggle background on open/hover/focus. */
+.is-style-accordion-minimal .wp-block-accordion-item.is-open .wp-block-accordion-heading__toggle,
+.is-style-accordion-minimal .wp-block-accordion-heading__toggle:hover,
+.is-style-accordion-minimal .wp-block-accordion-heading__toggle:focus {
+	background: transparent;
+}
+
+/* Circular icon badge (the "+"). */
+.is-style-accordion-minimal .wp-block-accordion-heading__toggle-icon {
+	background: #f3f4f6;
+	width: 2rem;
+	height: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	border-radius: 9999px;
+	transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Rotate + into × when the item is open — no separate icon needed. */
+.is-style-accordion-minimal .wp-block-accordion-item.is-open .wp-block-accordion-heading__toggle-icon {
+	transform: rotate(45deg);
+	background: #eceff2;
+}
+
+.is-style-accordion-minimal .wp-block-accordion-heading__toggle:hover .wp-block-accordion-heading__toggle-icon,
+.is-style-accordion-minimal .wp-block-accordion-heading__toggle:focus .wp-block-accordion-heading__toggle-icon {
+	background: #eceff2;
+}

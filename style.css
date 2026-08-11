@@ -4,8 +4,8 @@ Theme URI: https://github.com/lwangdu
 Author: Lobsang Wangdu
 Author URI: https://ucnature.org
 Description: UC Nature block theme
-Requires at least: 6.8
-Tested up to: 6.8
+Requires at least: 6.9
+Tested up to: 7.0
 Requires PHP: 7.2
 Version: 0.0.3
 License: GNU General Public License v3 or later
@@ -170,6 +170,38 @@ textarea {
 /* Blocks
 ---------------------------------------------------------------------------- */
 
+/* Advisory
+--------------------------------------------- */
+
+.ucnature-advisory {
+	box-shadow: 0 16px 40px rgb(0 54 96 / 10%);
+}
+
+.ucnature-advisory__eyebrow,
+.ucnature-advisory__header > :last-child,
+.ucnature-advisory__action p {
+	margin-bottom: 0;
+}
+
+.ucnature-advisory__items > .wp-block-column {
+	border-top: 1px solid var(--wp--preset--color--darker-gray);
+	padding-top: var(--wp--preset--spacing--small);
+}
+
+.ucnature-advisory__items p:last-child {
+	margin-bottom: 0;
+}
+
+.ucnature-advisory__action {
+	border: 1px solid var(--wp--preset--color--darker-gray);
+}
+
+.ucnature-advisory__action .wp-block-buttons,
+.ucnature-advisory__action .wp-block-button,
+.ucnature-advisory__action .wp-block-button__link {
+	flex-shrink: 0;
+}
+
 /* Code
 --------------------------------------------- */
 
@@ -216,6 +248,21 @@ textarea {
 ---------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
+
+	.ucnature-advisory {
+		border-left-width: 4px !important;
+		padding: var(--wp--preset--spacing--small) !important;
+	}
+
+	.ucnature-advisory__action {
+		align-items: stretch !important;
+	}
+
+	.ucnature-advisory__action .wp-block-buttons,
+	.ucnature-advisory__action .wp-block-button,
+	.ucnature-advisory__action .wp-block-button__link {
+		width: 100%;
+	}
 
 	/* Utility
 	--------------------------------------------- */
